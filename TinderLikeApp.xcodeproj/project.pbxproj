@@ -12,6 +12,10 @@
 		CCD9DA3022157DB8006940D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD9DA2E22157DB7006940D2 /* Main.storyboard */; };
 		CCD9DA3222157DB9006940D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD9DA3122157DB9006940D2 /* Assets.xcassets */; };
 		CCD9DA3522157DB9006940D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD9DA3322157DB9006940D2 /* LaunchScreen.storyboard */; };
+		CCD9DA3D22157DD1006940D2 /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA3C22157DD1006940D2 /* ItemCardView.swift */; };
+		CCD9DA3F22157DDE006940D2 /* ItemCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD9DA3E22157DDE006940D2 /* ItemCardView.xib */; };
+		CCD9DA4522158582006940D2 /* IntExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA4422158582006940D2 /* IntExtention.swift */; };
+		CCD9DA4822158723006940D2 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA4722158723006940D2 /* CustomViewBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CCD9DA3122157DB9006940D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD9DA3422157DB9006940D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCD9DA3622157DB9006940D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD9DA3C22157DD1006940D2 /* ItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
+		CCD9DA3E22157DDE006940D2 /* ItemCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCardView.xib; sourceTree = "<group>"; };
+		CCD9DA4422158582006940D2 /* IntExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtention.swift; sourceTree = "<group>"; };
+		CCD9DA4722158723006940D2 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,38 @@
 				CCD9DA2C22157DB7006940D2 /* ViewController.swift */,
 				CCD9DA2E22157DB7006940D2 /* Main.storyboard */,
 				CCD9DA3122157DB9006940D2 /* Assets.xcassets */,
+				CCD9DA432215856C006940D2 /* Extention */,
+				CCD9DA4022157DEE006940D2 /* View */,
 				CCD9DA3322157DB9006940D2 /* LaunchScreen.storyboard */,
 				CCD9DA3622157DB9006940D2 /* Info.plist */,
 			);
 			path = TinderLikeApp;
+			sourceTree = "<group>";
+		};
+		CCD9DA4022157DEE006940D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCD9DA4622158709006940D2 /* ItemCardView */,
+				CCD9DA4722158723006940D2 /* CustomViewBase.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CCD9DA432215856C006940D2 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				CCD9DA4422158582006940D2 /* IntExtention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		CCD9DA4622158709006940D2 /* ItemCardView */ = {
+			isa = PBXGroup;
+			children = (
+				CCD9DA3E22157DDE006940D2 /* ItemCardView.xib */,
+				CCD9DA3C22157DD1006940D2 /* ItemCardView.swift */,
+			);
+			path = ItemCardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCD9DA3522157DB9006940D2 /* LaunchScreen.storyboard in Resources */,
+				CCD9DA3F22157DDE006940D2 /* ItemCardView.xib in Resources */,
 				CCD9DA3222157DB9006940D2 /* Assets.xcassets in Resources */,
 				CCD9DA3022157DB8006940D2 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD9DA4822158723006940D2 /* CustomViewBase.swift in Sources */,
+				CCD9DA3D22157DD1006940D2 /* ItemCardView.swift in Sources */,
 				CCD9DA2D22157DB7006940D2 /* ViewController.swift in Sources */,
+				CCD9DA4522158582006940D2 /* IntExtention.swift in Sources */,
 				CCD9DA2B22157DB7006940D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
