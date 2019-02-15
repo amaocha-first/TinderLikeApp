@@ -18,6 +18,7 @@
 		CCD9DA4822158723006940D2 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA4722158723006940D2 /* CustomViewBase.swift */; };
 		CCD9DA4C22169ACE006940D2 /* TravelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA4B22169ACE006940D2 /* TravelPresenter.swift */; };
 		CCD9DA502216C938006940D2 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA4F2216C938006940D2 /* UIColorExtention.swift */; };
+		CCD9DA522216CFB6006940D2 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA512216CFB6006940D2 /* TravelModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CCD9DA4722158723006940D2 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 		CCD9DA4B22169ACE006940D2 /* TravelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPresenter.swift; sourceTree = "<group>"; };
 		CCD9DA4F2216C938006940D2 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		CCD9DA512216CFB6006940D2 /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		CCD9DA4A22169AA8006940D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CCD9DA512216CFB6006940D2 /* TravelModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				CCD9DA4822158723006940D2 /* CustomViewBase.swift in Sources */,
 				CCD9DA3D22157DD1006940D2 /* ItemCardView.swift in Sources */,
 				CCD9DA4C22169ACE006940D2 /* TravelPresenter.swift in Sources */,
+				CCD9DA522216CFB6006940D2 /* TravelModel.swift in Sources */,
 				CCD9DA2D22157DB7006940D2 /* MainViewController.swift in Sources */,
 				CCD9DA4522158582006940D2 /* IntExtention.swift in Sources */,
 				CCD9DA502216C938006940D2 /* UIColorExtention.swift in Sources */,
