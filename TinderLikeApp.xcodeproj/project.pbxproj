@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC669FEE2219303900FC17BB /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC669FED2219303900FC17BB /* UIViewControllerExtension.swift */; };
 		CCD9DA2B22157DB7006940D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA2A22157DB7006940D2 /* AppDelegate.swift */; };
 		CCD9DA2D22157DB7006940D2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA2C22157DB7006940D2 /* MainViewController.swift */; };
 		CCD9DA3022157DB8006940D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD9DA2E22157DB7006940D2 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC669FED2219303900FC17BB /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		CCD9DA2722157DB7006940D2 /* TinderLikeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderLikeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD9DA2A22157DB7006940D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD9DA2C22157DB7006940D2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				CCD9DA4422158582006940D2 /* IntExtention.swift */,
 				CCD9DA4F2216C938006940D2 /* UIColorExtention.swift */,
+				CC669FED2219303900FC17BB /* UIViewControllerExtension.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				CCD9DA4822158723006940D2 /* CustomViewBase.swift in Sources */,
 				CCD9DA3D22157DD1006940D2 /* ItemCardView.swift in Sources */,
+				CC669FEE2219303900FC17BB /* UIViewControllerExtension.swift in Sources */,
 				CCD9DA4C22169ACE006940D2 /* TravelPresenter.swift in Sources */,
 				CCD9DA522216CFB6006940D2 /* TravelModel.swift in Sources */,
 				CCD9DA2D22157DB7006940D2 /* MainViewController.swift in Sources */,
