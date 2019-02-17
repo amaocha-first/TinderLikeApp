@@ -75,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD9DA2A22157DB7006940D2 /* AppDelegate.swift */,
+				CCD9DA3622157DB9006940D2 /* Info.plist */,
 				CCD9DA552217E967006940D2 /* Storyboard */,
 				CCD9DA3122157DB9006940D2 /* Assets.xcassets */,
 				CCD9DA432215856C006940D2 /* Extention */,
@@ -83,7 +84,6 @@
 				CCD9DA4022157DEE006940D2 /* View */,
 				CCD9DA4E22169FCE006940D2 /* ViewController */,
 				CCD9DA3322157DB9006940D2 /* LaunchScreen.storyboard */,
-				CCD9DA3622157DB9006940D2 /* Info.plist */,
 			);
 			path = TinderLikeApp;
 			sourceTree = "<group>";
@@ -91,8 +91,8 @@
 		CCD9DA4022157DEE006940D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CCD9DA4622158709006940D2 /* ItemCardView */,
 				CCD9DA4722158723006940D2 /* CustomViewBase.swift */,
+				CCD9DA4622158709006940D2 /* ItemCardView */,
 			);
 			path = View;
 			sourceTree = "<group>";
