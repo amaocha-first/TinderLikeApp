@@ -100,7 +100,7 @@ class MainViewController: UIViewController {
             
             //現在表示されているカードの背面へ新たに作成したカードを追加する
             view.addSubview(itemCardView)
-            view.sendSubview(toBack: itemCardView)
+            view.sendSubviewToBack(itemCardView)
         }
         
         //MEMO: 配列に格納されているviewのうち、先頭にあるviewのみを操作可能にする
@@ -139,6 +139,34 @@ class MainViewController: UIViewController {
             })
             itemCount += 1
         }
+    }
+}
+
+//MARK: - ItemCardDelegate
+
+extension MainViewController: ItemCardDelegate {
+    
+    //ドラッグ処理が開始された際にViewController側で実行する処理
+    func  beganDragging() {
+        changeScaleToItemCardViews(skipSelectedView: true)
+    }
+    
+    //ドラッグ処理中に位置情報が更新された際にVIewController側で実行する処理
+    func updatePosition(_ itemCardView: ItemCardView, centerX: CGFloat, centerY: CGFloat) {
+        
+        //もしドラッグ処理中に実行したい処理があればここに記述する
+    }
+    
+    //左方向のスワイプが完了した際にviewController側で実行する処理
+    func swipedLeftPosition() {
+        itemCardViewList.removeFirst()
+        enableUserInteractionToFirstItemCardView()
+        changeScaleToItemCardViews(skipSelectedView: false)
+    }
+    
+    //元の位置へ戻った際にviewController側で実行する処理
+    func returnToOriginalPosition() {
+        changeScaleToItemCardViews(skipSelectedView: false)
     }
 }
 

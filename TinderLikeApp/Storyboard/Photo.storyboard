@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo View Controller-->
+        <scene sceneID="jyu-yd-Iqo">
+            <objects>
+                <viewController id="A3b-BA-Yxv" customClass="PhotoViewController" customModule="TinderLikeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gkt-IJ-mfm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uA7-ia-0rZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_sample" translatesAutoresizingMaskIntoConstraints="NO" id="0ER-RY-r8n" userLabel="photoImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1440" height="960"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SX8-G2-stA" userLabel="Photo Header View">
+                                        <rect key="frame" x="0.0" y="20" width="1440" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="タイトルが入ります" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wB-Od-uJB">
+                                                <rect key="frame" x="244" y="16" width="117" height="13"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIr-Gu-iTQ">
+                                                <rect key="frame" x="12" y="7" width="60" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="EgH-hB-sbP"/>
+                                                    <constraint firstAttribute="height" constant="30" id="fGp-eS-onK"/>
+                                                </constraints>
+                                                <state key="normal" title="×閉じる">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9wB-Od-uJB" firstAttribute="centerY" secondItem="SX8-G2-stA" secondAttribute="centerY" id="1sK-JN-kEh"/>
+                                            <constraint firstItem="jIr-Gu-iTQ" firstAttribute="centerY" secondItem="SX8-G2-stA" secondAttribute="centerY" id="3j0-he-iWr"/>
+                                            <constraint firstItem="jIr-Gu-iTQ" firstAttribute="leading" secondItem="SX8-G2-stA" secondAttribute="leading" constant="12" id="CaI-wx-bdn"/>
+                                            <constraint firstAttribute="height" constant="44" id="Upe-e3-LOf"/>
+                                            <constraint firstItem="9wB-Od-uJB" firstAttribute="top" secondItem="SX8-G2-stA" secondAttribute="top" constant="16" id="bvP-oN-qVU"/>
+                                            <constraint firstItem="9wB-Od-uJB" firstAttribute="leading" secondItem="SX8-G2-stA" secondAttribute="leading" constant="244" id="tya-eY-lKh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SX8-G2-stA" firstAttribute="leading" secondItem="uA7-ia-0rZ" secondAttribute="leading" id="2gp-YU-MaK"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ER-RY-r8n" secondAttribute="bottom" id="3do-n2-CM5"/>
+                                    <constraint firstItem="0ER-RY-r8n" firstAttribute="top" secondItem="uA7-ia-0rZ" secondAttribute="top" id="6XG-st-Umr"/>
+                                    <constraint firstItem="SX8-G2-stA" firstAttribute="top" secondItem="uA7-ia-0rZ" secondAttribute="top" constant="20" id="ES8-cc-gdQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="0ER-RY-r8n" secondAttribute="trailing" id="Kdf-5r-dNu"/>
+                                    <constraint firstItem="0ER-RY-r8n" firstAttribute="leading" secondItem="uA7-ia-0rZ" secondAttribute="leading" id="RvS-Q2-RR4"/>
+                                    <constraint firstAttribute="trailing" secondItem="SX8-G2-stA" secondAttribute="trailing" id="VHK-h7-Me9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XXQ-st-Acj" firstAttribute="bottom" secondItem="uA7-ia-0rZ" secondAttribute="bottom" id="UNj-1y-75Z"/>
+                            <constraint firstItem="uA7-ia-0rZ" firstAttribute="top" secondItem="Gkt-IJ-mfm" secondAttribute="top" id="XZn-00-U32"/>
+                            <constraint firstItem="XXQ-st-Acj" firstAttribute="trailing" secondItem="uA7-ia-0rZ" secondAttribute="trailing" id="c9k-cd-w41"/>
+                            <constraint firstItem="uA7-ia-0rZ" firstAttribute="leading" secondItem="XXQ-st-Acj" secondAttribute="leading" id="fdq-Xc-9qC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XXQ-st-Acj"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoCloseButton" destination="jIr-Gu-iTQ" id="PrT-Rx-oOv"/>
+                        <outlet property="photoHeaderView" destination="SX8-G2-stA" id="Om1-tX-dMm"/>
+                        <outlet property="photoImageView" destination="0ER-RY-r8n" id="4Yj-Mq-cfz"/>
+                        <outlet property="photoImageViewButtomConstraint" destination="UNj-1y-75Z" id="y9i-uY-2LA"/>
+                        <outlet property="photoImageViewLeftConstraint" destination="fdq-Xc-9qC" id="iN0-KU-7zA"/>
+                        <outlet property="photoImageViewRightConstraint" destination="c9k-cd-w41" id="ccO-LU-Zn8"/>
+                        <outlet property="photoImageViewTopConstraint" destination="XZn-00-U32" id="mVX-ZW-V1t"/>
+                        <outlet property="photoScrollView" destination="uA7-ia-0rZ" id="KVq-Is-LBJ"/>
+                        <outlet property="photoTitleLabel" destination="9wB-Od-uJB" id="Kl4-vD-Bta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZQ-nm-C8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.59999999999999" y="160.56971514242881"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo_sample" width="1440" height="960"/>
+    </resources>
+</document>

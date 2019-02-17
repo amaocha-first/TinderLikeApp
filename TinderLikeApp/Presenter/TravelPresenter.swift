@@ -45,11 +45,11 @@ class TravelPresenter {
         return [
             TravelModel(
                 id: 1,
-                titile, "青森の自然風景",
+                title: "青森の自然風景",
                 imageName: "aomori",
                 published: "2018.08.20",
                 access: "新幹線で約３時間",
-                budget: "¥ 50,000程度",
+                budget: "¥50,000程度",
                 message: "自然に溢れたスポット満載"
             ),
             TravelModel(

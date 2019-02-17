@@ -19,6 +19,8 @@
 		CCD9DA4C22169ACE006940D2 /* TravelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA4B22169ACE006940D2 /* TravelPresenter.swift */; };
 		CCD9DA502216C938006940D2 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA4F2216C938006940D2 /* UIColorExtention.swift */; };
 		CCD9DA522216CFB6006940D2 /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA512216CFB6006940D2 /* TravelModel.swift */; };
+		CCD9DA542216D20E006940D2 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD9DA532216D20E006940D2 /* PhotoViewController.swift */; };
+		CCD9DA572217E99E006940D2 /* Photo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD9DA562217E99E006940D2 /* Photo.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CCD9DA4B22169ACE006940D2 /* TravelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelPresenter.swift; sourceTree = "<group>"; };
 		CCD9DA4F2216C938006940D2 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
 		CCD9DA512216CFB6006940D2 /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		CCD9DA532216D20E006940D2 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		CCD9DA562217E99E006940D2 /* Photo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Photo.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD9DA2A22157DB7006940D2 /* AppDelegate.swift */,
-				CCD9DA2E22157DB7006940D2 /* Main.storyboard */,
+				CCD9DA552217E967006940D2 /* Storyboard */,
 				CCD9DA3122157DB9006940D2 /* Assets.xcassets */,
 				CCD9DA432215856C006940D2 /* Extention */,
 				CCD9DA4A22169AA8006940D2 /* Model */,
@@ -129,8 +133,18 @@
 			isa = PBXGroup;
 			children = (
 				CCD9DA2C22157DB7006940D2 /* MainViewController.swift */,
+				CCD9DA532216D20E006940D2 /* PhotoViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CCD9DA552217E967006940D2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CCD9DA2E22157DB7006940D2 /* Main.storyboard */,
+				CCD9DA562217E99E006940D2 /* Photo.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +207,7 @@
 			files = (
 				CCD9DA3522157DB9006940D2 /* LaunchScreen.storyboard in Resources */,
 				CCD9DA3F22157DDE006940D2 /* ItemCardView.xib in Resources */,
+				CCD9DA572217E99E006940D2 /* Photo.storyboard in Resources */,
 				CCD9DA3222157DB9006940D2 /* Assets.xcassets in Resources */,
 				CCD9DA3022157DB8006940D2 /* Main.storyboard in Resources */,
 			);
@@ -210,6 +225,7 @@
 				CCD9DA4C22169ACE006940D2 /* TravelPresenter.swift in Sources */,
 				CCD9DA522216CFB6006940D2 /* TravelModel.swift in Sources */,
 				CCD9DA2D22157DB7006940D2 /* MainViewController.swift in Sources */,
+				CCD9DA542216D20E006940D2 /* PhotoViewController.swift in Sources */,
 				CCD9DA4522158582006940D2 /* IntExtention.swift in Sources */,
 				CCD9DA502216C938006940D2 /* UIColorExtention.swift in Sources */,
 				CCD9DA2B22157DB7006940D2 /* AppDelegate.swift in Sources */,
